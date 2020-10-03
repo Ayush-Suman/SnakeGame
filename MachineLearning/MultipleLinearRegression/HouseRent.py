@@ -36,8 +36,8 @@ print('Intercept:', model.intercept_)
 print('Acuuracy:', round(accuracy*100,3),'%')
 
 #### EVALUATION ####
-testVals =model.predict(xTest)
+testVa =model.predict(xTest)
 error =[]
-for i,testVal in enumerate(testVals):
+for i,testVal in enumerate(testVa):
     error.append(yTest[i]-testVal)
     print(f'Actual:{yTest[i]} Predicyion:{int(testVal)} Error: {int(error[i])}')
